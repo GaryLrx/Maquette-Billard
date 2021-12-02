@@ -1,45 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
+
 /* NAVBAR */
-header {
+
+header{
     width: 100vw;
     margin: 0;
     position: relative;
-    
 }
-header .navigation{
+
+.navigation{
     background-color: black;
     display: flex;
     justify-content: space-between;
     height: 10vh;
 }
-header .navigation img{
+
+.navigation img{
     width: 150px;
     max-width: 1440px;
 }
-header nav{
+
+nav{
     text-align: center;
+
 }
-header nav ul{
+
+nav ul{
     display: flex;
-    
 }
-header nav ul li{
+
+nav ul li{
     list-style: none;
     color: white;
 }
-header nav ul li a{
+
+nav ul li a{
     display: inline-block;
     color: white;
     text-decoration: none;
     padding: 10px;
     line-height: 70px;
 }
-header nav ul li a:after{
+
+nav ul li a:after{
     content: '';
     display: block;
     margin: auto;
@@ -48,24 +56,25 @@ header nav ul li a:after{
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
 }
-header nav ul li a:hover:after{
+
+nav ul li a:hover:after{
     width: 90%;
     background: #444;
 }
-header .texte{
+
+.texte{
     position: absolute;
     top: 43%;
     left: 23%;
     color: white;
-    max-width: 255px;
+    width: 500px;
 }
-header p{
-    margin: 1rem 0;
-}
-header .contenu{
+
+.contenu{
     height: 89vh;
 }
-header .contenu h1{
+
+.contenu h1{
     position: absolute;
     top: 30%;
     left: 36%;
@@ -73,228 +82,26 @@ header .contenu h1{
     width: 500px;
     color: white;
 }
-header .contenu #arrow{
+
+
+.contenu .arrow{
+    
+}
+
+.contenu .arrow{
     position: absolute;
-    cursor: pointer;
     width: 50px;
     bottom: 3%;
     left: 50%;
 }
-.billard{
-    width: 100%;  
-    height: 89vh;
-    object-fit: cover;
-}
+    .billard{
+        width: 100%;  
+        height: 90vh;
+        object-fit: cover;
+    }
 
 /* MAIN */
-.main-articles{
+
+main{
     background-color: #6B5B54;
 }
-
-main ul{
-    padding-left: 28px;
-}
-.articles{
-    margin: 0 auto;
-    max-width: 1050px;
-    
-}
-article{
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    margin: 50px;
-    padding: 1.5rem;
-    position: relative;
-}
-
-.actus{
-    display: flex;
-    justify-content: end;
-    padding-bottom: 41px;
-    margin-right: 50px;
-}
-
-#fleche{
-    width: 20px;
-}
-
-.actus img{
-    margin-left: 10px;
-}
-.marine{color: #345765;}
-.marron{color: #6b5b5499;}
-
-.imgArt{
-    width: 400px;
-    padding-left: 20px;
-}
-
-main a{
-
-    text-decoration: none;
-}
-#blanc{
-
-    color: #FFFFFF;
-}
-.uc{
-    text-transform: uppercase;
-    color: white;
-    padding: 4rem 0;
-    text-align: center;
-}
-.uc2{
-    text-transform: uppercase;
-    padding: 4rem 0;
-    text-align: center;
-}
-.competitions{
-    max-width: 60rem;
-    margin:0 auto;
-}
-.competitions p {
-    text-align: center;
-}
-.dc{
-    display: flex;
-    justify-content: space-between;
-}
-.petite-competition{
-    width: 45%;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    border-radius: 10px;
-    padding: 1rem 3rem;
-    margin: 2rem;
-    position: relative;
-}
-.competition{
-    box-shadow: 0px 4px 4px 0px #00000040;
-    border-radius: 10px;
-    width: 94%;
-    margin: 2rem;
-    position: relative;
-    padding: 1rem 0;
-}
-.competitions img{
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem
-}
-.competitions .calendrier{
-    position: relative;
-    width:29px;
-    left: 11px;
-    top: 10px;
-}
-#calendrier{
-cursor: pointer;
-}
-main .prochaines{
-    color: #6B5B54;
-}
-
-#e,#b{
-    cursor: pointer;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-}
-
-.index{
-    cursor: pointer;
-}
-
-article p{
-    margin: 20px 0 20px 0;
-}
-
-.max{
-    max-width: 400px;
-}
-
-/* FOOTER */
-footer{
-    color: white;
-    position: relative;
-}
-.copyright{
-    background-color: #345765;
-    color: #FFFFFF;
-}
-footer .footer h4{
-    text-decoration: underline;
-    color: white;
-}
-footer img.vague{
-    position: absolute;
-    bottom: 16rem;
-    left: 5px;
-    width: 100vw;
-    z-index: -1;
-}
-.gauche{
-width: 50vw;
-}
-.droite{
-width: 50vw;
-}
-.vague{
-    display: flex;
-}
-.instance{
-    width: 35vw;
-    display: flex;
-}
-
-.instance img{    
-    height: 76px;
-    padding-left: 76px;
-
-}
-.footer{
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    left: 22%;
-    top: 40px;
-}
-
-.flex{
-    display: flex;
-}
-
-.flex img{
-    width: 16px;
-    padding-right: 10px;
-}
-
-.coordonnees h4{
-    margin: 27px 0;
-}
-
-.coordonnees p{
-    margin: 6px 0;
-}
-.prochaine{
-padding: 12px 0;
-text-align: center;
-}
-
-.instance h4{
-    margin: 27px 0;
-}
-.instance p{
-    margin: 3px 0;
-}
-.coordonnees{
-    width: 35vw;
-
-}
-.copyright{
-    text-align: center;
-    padding: 15px;
-}
-.hidden{
-    display: none;
-}
-
